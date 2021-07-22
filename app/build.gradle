@@ -1,0 +1,57 @@
+/*
+ *   Copyright © 2018-2021 PSPDFKit GmbH. All rights reserved.
+ *
+ *   The PSPDFKit Sample applications are licensed with a modified BSD license.
+ *   Please see License for details. This notice may not be removed from this file.
+ */
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+// This example defined all versions (build tools, version numbers, dependencies) in a global file.
+// The file can be found in the root directory of this example project.
+apply from: '../versions.gradle'
+
+android {
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.pspdfkit.example.customfonts"
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+
+        versionName versions.pspdfkit
+        versionCode versions.pspdfkitVersionCode
+
+        // This is the placeholder license string. You can build and run the sample with this placeholder.
+        // You can replace the placeholder with your own demo or production license key that you can obtain
+        // at https://pspdfkit.com. This license string is used inside the CustomFontsActivity.
+        // Please note that this example does not define the license inside the AndroidManifest.xml. By omitting
+        // the license in the manifest, PSPDFKit won't initialize automatically, which allows to set the font paths.
+        resValue "string", "pspdfkit_license_key", "\"YOUR_LICENSE_KEY_GOES_HERE\""
+
+        // This allows launching the app on older devices without requiring to minimize debug sources using Proguard.
+        multiDexEnabled true
+    }
+
+    // PSPDFKit targets Java 8. In order to make use of PSPDFKit and all Java 8 features supported by
+    // Android, this build enables Java 8 too. You can find a full list of available Java 8 features
+    // here: https://developer.android.com/studio/write/java8-support
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // The sources of this example are written in Kotlin. In order to have them picked up by Android Studio,
+    // we add the Kotlin sources directory to the default Java source set. Alternatively, you could add
+    // your Kotlin sources to the default java/ directory too, if you like.
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+}
+
+dependencies {
+    // PSPDFKit is integrated from the PSPDFKit Maven repository. See the `repositories` block at the beginning
+    // of this file, which shows how to set up the repository in your app.
+    implementation "com.pspdfkit:pspdfkit:${versions.pspdfkit}"
+}
