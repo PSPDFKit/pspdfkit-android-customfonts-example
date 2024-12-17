@@ -5,6 +5,6 @@
   ~   Please see License for details. This notice may not be removed from this file.
   -->
 
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="app_name">Custom Fonts Example</string>
 </resources>
