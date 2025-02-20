@@ -1,5 +1,5 @@
 /*
- *   Copyright © 2018-2024 PSPDFKit GmbH. All rights reserved.
+ *   Copyright © 2018-2025 PSPDFKit GmbH. All rights reserved.
  *
  *   The PSPDFKit Sample applications are licensed with a modified BSD license.
  *   Please see License for details. This notice may not be removed from this file.
@@ -19,8 +19,8 @@ android {
         minSdk = 21
         targetSdk = compileSdk
 
-        versionName = "2024.9.1"
-        versionCode = 141407
+        versionName = "10.0.0"
+        versionCode = 141874
     }
 
     compileOptions {
@@ -43,5 +43,5 @@ dependencies {
 
     // Nutrient is integrated from the Nutrient Maven repository. See the `repositories` block at the beginning
     // of this file, which shows how to set up the repository in your app.
-    implementation("com.pspdfkit:pspdfkit:2024.9.1")
+    implementation("io.nutrient:nutrient:10.0.0")
 }
