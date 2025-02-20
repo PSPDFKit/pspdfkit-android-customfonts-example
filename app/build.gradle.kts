@@ -19,8 +19,8 @@ android {
         minSdk = 21
         targetSdk = compileSdk
 
-        versionName = "2024.6.1"
-        versionCode = 140580
+        versionName = "2024.7.0"
+        versionCode = 140852
     }
 
     compileOptions {
@@ -43,5 +43,5 @@ dependencies {
 
     // PSPDFKit is integrated from the PSPDFKit Maven repository. See the `repositories` block at the beginning
     // of this file, which shows how to set up the repository in your app.
-    implementation("com.pspdfkit:pspdfkit:2024.6.1")
+    implementation("com.pspdfkit:pspdfkit:2024.7.0")
 }
