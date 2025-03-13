@@ -20,7 +20,7 @@ the license in the manifest, PSPDFKit won't initialize automatically, which allo
         tools:ignore="DataExtractionRules,GoogleAppIndexingWarning">
 
         <meta-data
-            android:name="pspdfkit_font_path"
+            android:name="nutrient_font_path"
             android:value="assets" />
 
         <!-- The examples launcher activity. -->

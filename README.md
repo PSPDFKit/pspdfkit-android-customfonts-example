@@ -33,7 +33,7 @@ Furthermore, the assets folder contains two custom TrueType font files, which wi
 
 ### Disabling automatic initialization
 
-This example project does not specify the `pspdfkit_license_key` as `meta-data` element inside the `AndroidManifest.xml`. This is intentional, and prevents Nutrient from automatically initializing without custom fonts. Instead, custom font loading requires the app to manually initialize Nutrient using `PSPDFKit.initialize(context, InitializationOptions(licenseKey, fontPaths))`.
+This example project does not specify the `nutrient_license_key` as `meta-data` element inside the `AndroidManifest.xml`. This is intentional, and prevents Nutrient from automatically initializing without custom fonts. Instead, custom font loading requires the app to manually initialize Nutrient using `PSPDFKit.initialize(context, InitializationOptions(licenseKey, fontPaths))`.
 
 ## License
 

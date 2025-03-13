@@ -19,7 +19,7 @@ import com.pspdfkit.ui.PdfActivity
  *
  * 2021-12-21 updated by michael kellner
  * Custom font intitialization is now handled by the [InitializationProvider] with according configuration
- * in the manifest (see meta-data "pspdfkit_font_path" in the manifest)
+ * in the manifest (see meta-data "nutrient_font_path" in the manifest)
  */
 class CustomFontsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

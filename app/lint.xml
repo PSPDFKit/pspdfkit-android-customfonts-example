@@ -8,6 +8,6 @@
 <lint>
     <issue id="UnusedResources" severity="error">
         <!-- This is a valid unused resource. See build.gradle. -->
-        <ignore regexp="pspdfkit_license_key" />
+        <ignore regexp="nutrient_license_key" />
     </issue>
 </lint>
