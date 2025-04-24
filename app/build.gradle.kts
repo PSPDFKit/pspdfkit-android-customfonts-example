@@ -19,8 +19,8 @@ android {
         minSdk = 21
         targetSdk = compileSdk
 
-        versionName = "10.1.1"
-        versionCode = 142264
+        versionName = "10.2.0"
+        versionCode = 142527
     }
 
     compileOptions {
@@ -43,5 +43,5 @@ dependencies {
 
     // Nutrient is integrated from the Nutrient Maven repository. See the `repositories` block at the beginning
     // of this file, which shows how to set up the repository in your app.
-    implementation("io.nutrient:nutrient:10.1.1")
+    implementation("io.nutrient:nutrient:10.2.0")
 }
