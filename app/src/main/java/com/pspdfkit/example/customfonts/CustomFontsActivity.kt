@@ -7,9 +7,9 @@
 
 package com.pspdfkit.example.customfonts
 
-import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.net.toUri
 import com.pspdfkit.configuration.activity.PdfActivityConfiguration
 import com.pspdfkit.initialization.InitializationProvider
 import com.pspdfkit.ui.PdfActivity
@@ -34,7 +34,7 @@ class CustomFontsActivity : AppCompatActivity() {
      */
     private fun showDocument() {
         val config = PdfActivityConfiguration.Builder(this).build()
-        val uri = Uri.parse("file:///android_asset/Example-Fonts.pdf")
+        val uri = "file:///android_asset/Example-Fonts.pdf".toUri()
         PdfActivity.showDocument(this, uri, config)
     }
 }
