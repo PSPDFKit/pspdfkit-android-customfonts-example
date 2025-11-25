@@ -19,8 +19,8 @@ android {
         minSdk = 23
         targetSdk = compileSdk
 
-        versionName = "10.8.0"
-        versionCode = 144807
+        versionName = "10.9.0"
+        versionCode = 145049
     }
 
     compileOptions {
@@ -37,11 +37,16 @@ android {
         // "GradleDependency" needs to be on a separate line because of gradle_lint.sh CI script
         disable.add("GradleDependency")
     }
+    packaging {
+        resources {
+            excludes += "/META-INF/versions/9/OSGI-INF/MANIFEST.MF"
+        }
+    }
 }
 
 dependencies {
 
     // Nutrient is integrated from the Nutrient Maven repository. See the `repositories` block at the beginning
     // of this file, which shows how to set up the repository in your app.
-    implementation("io.nutrient:nutrient:10.8.0")
+    implementation("io.nutrient:nutrient:10.9.0")
 }
