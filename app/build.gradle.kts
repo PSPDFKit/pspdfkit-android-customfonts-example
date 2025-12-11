@@ -20,7 +20,7 @@ android {
         targetSdk = compileSdk
 
         versionName = "10.9.0"
-        versionCode = 145049
+        versionCode = 145300
     }
 
     compileOptions {
