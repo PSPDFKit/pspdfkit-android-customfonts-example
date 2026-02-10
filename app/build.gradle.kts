@@ -1,5 +1,5 @@
 /*
- *   Copyright © 2018-2025 PSPDFKit GmbH. All rights reserved.
+ *   Copyright © 2018-2026 PSPDFKit GmbH. All rights reserved.
  *
  *   The PSPDFKit Sample applications are licensed with a modified BSD license.
  *   Please see License for details. This notice may not be removed from this file.
@@ -19,8 +19,8 @@ android {
         minSdk = 23
         targetSdk = compileSdk
 
-        versionName = "10.10.1"
-        versionCode = 145300
+        versionName = "11.0.0"
+        versionCode = 146156
     }
 
     compileOptions {
@@ -33,7 +33,7 @@ android {
     }
     lint {
         warningsAsErrors = true
-        disable.add("ObsoleteLintCustomCheck")
+        disable += setOf("ObsoleteLintCustomCheck", "AndroidGradlePluginVersion")
         // "GradleDependency" needs to be on a separate line because of gradle_lint.sh CI script
         disable.add("GradleDependency")
     }
@@ -48,5 +48,5 @@ dependencies {
 
     // Nutrient is integrated from the Nutrient Maven repository. See the `repositories` block at the beginning
     // of this file, which shows how to set up the repository in your app.
-    implementation("io.nutrient:nutrient:10.10.1")
+    implementation("io.nutrient:nutrient:11.0.0")
 }
