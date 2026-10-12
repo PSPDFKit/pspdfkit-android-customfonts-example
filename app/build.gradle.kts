@@ -13,15 +13,16 @@ plugins {
 
 android {
     namespace = "com.pspdfkit.example.customfonts"
-    compileSdk = 36
+    compileSdk = 37
+    compileSdkMinor = 1
 
     defaultConfig {
         applicationId = namespace
         minSdk = 24
         targetSdk = compileSdk
 
-        versionName = "11.7.0"
-        versionCode = 148672
+        versionName = "12.0.0"
+        versionCode = 150260
     }
 
     compileOptions {
@@ -45,5 +46,5 @@ android {
 dependencies {
 
     // Nutrient is published to Maven Central, so no custom repository setup is required.
-    implementation("io.nutrient:nutrient-android-sdk:11.7.0")
+    implementation("io.nutrient:nutrient-android-sdk:12.0.0")
 }
