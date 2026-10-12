@@ -22,7 +22,7 @@ android {
         targetSdk = compileSdk
 
         versionName = "12.0.0"
-        versionCode = 150260
+        versionCode = 150266
     }
 
     compileOptions {
