@@ -21,8 +21,8 @@ android {
         minSdk = 24
         targetSdk = compileSdk
 
-        versionName = "12.0.0"
-        versionCode = 150266
+        versionName = "12.1.0"
+        versionCode = 1
     }
 
     compileOptions {
@@ -46,5 +46,5 @@ android {
 dependencies {
 
     // Nutrient is published to Maven Central, so no custom repository setup is required.
-    implementation("io.nutrient:nutrient-android-sdk:12.0.0")
+    implementation("io.nutrient:nutrient-android-sdk:12.1.0")
 }
